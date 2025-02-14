@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Extension Name",
+    "description": "Some Desc.",
+    "version": "1.1",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://emupedia.net/*"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [{
+        "matches": ["https://emupedia.net/emupedia-game-agar.io/*"],
+        "run_at": "document_start",
+        "js": ["scripts/inject.js"]
+    }],
+    "web_accessible_resources": [{
+        "resources": ["injected.js"],
+        "matches": ["https://emupedia.net/*"]
+    }]
+}
