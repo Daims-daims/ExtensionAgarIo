@@ -47,4 +47,5 @@
 
 #### TODO
 
-Add all macro JS script in scripts/macroScript.js file
+- Add all macro JS script in scripts/macroScript.js file
+- prevent map from listening to mouseEvent
