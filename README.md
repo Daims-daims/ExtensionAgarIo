@@ -20,6 +20,7 @@
 ## Friend List
 
     Give unique color to friends on map
+    Click on friend's name to unfriend
 
 ## Map parameter 
 
