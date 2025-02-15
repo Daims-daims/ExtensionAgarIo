@@ -1,0 +1,11 @@
+interface storageInfo{
+    friendList:string[],
+    userName:string
+
+    COEF_SHRINK:number;
+  
+    OFFST_X:number;
+    OFFST_Y:number;
+  
+    MARGIN_MAP:number;
+}

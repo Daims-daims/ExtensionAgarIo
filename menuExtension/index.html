@@ -1,0 +1,40 @@
+<!-- popup.html -->
+<html>
+  <body>
+    <h1>Settings</h1>
+    <h2>Username : </h2>
+    <div class ="inputContainer">
+      <input type="text" id="inputMe" placeholder="Enter your name">
+      <button id="inputMeButton">Validate</button>  
+    </div>
+    <h2>Friends : </h2>
+    <div class ="inputContainer">
+      <input type="text" id="inputFriend" placeholder="Enter friend's name">
+      <button id="inputFriendButton">Add</button>  
+    </div>
+    <div id="rootContent"></div>
+
+    <h2>Map Parameters : </h2>
+    <div class ="RangePickerContainer">
+      <div id="coef_shrinkPickerLabel">Shrink Map : <div id="coef_shrinkPickerLabelValue">200</div></div> 
+      <input type="range" id="coef_shrinkPicker" min="100" max="500" value="200">
+    </div>
+    <div class ="RangePickerContainer">
+      <div id="OffsetXPickerLabel">OffsetX : <div id="OffsetXPickerLabelValue">10</div></div>
+      <input type="range" id="OffsetXPicker" min="0" max="100" value="10">
+    </div>
+    <div class ="RangePickerContainer">
+      <div id="OffsetYPickerLabel">OffsetY : <div id="OffsetYPickerLabelValue">50</div></div>
+      <input type="range" id="OffsetYPicker" min="0" max="100" value="50">
+    </div>
+    <div class ="RangePickerContainer">
+      <div id="MarginPickerLabel">Inner Margin Map : <div id="MarginPickerLabelValue">10</div></div>
+      <input type="range" id="MarginPicker" min="0" max="100" value="10" >
+    </div>
+    <div class ="RangePickerContainer">
+      <div id="sizeCoefPickerLabel">Ball Size Coef : <div id="sizeCoefPickerLabelValue">10</div></div>
+      <input type="range" id="sizeCoefPicker" min="1" max="20" value="10">
+    </div>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
